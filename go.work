@@ -1,0 +1,6 @@
+go 1.25.7
+
+use (
+	./apps/tftea-preview
+	./tftea-v2
+)
