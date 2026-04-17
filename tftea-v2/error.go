@@ -10,5 +10,6 @@ import "errors"
 
 var (
 	ErrActionCancelled = errors.New("action cancelled")
+	ErrNothingSelected = errors.New("nothing selected")
 	ErrUnexpectedError = errors.New("unexpected error")
 )
