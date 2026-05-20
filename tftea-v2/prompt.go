@@ -139,8 +139,8 @@ func (m PromptModel) View() tea.View {
 		s += fmt.Sprintf("\n  error: %s\n", m.err.Error())
 	}
 	s += fmt.Sprintf("\n%s confirm   %s cancel  \n",
-		keyStyle.Render(" enter "),
-		keyStyle.Render(" esc "),
+		shortcutStyle.Render(" enter "),
+		shortcutStyle.Render(" esc "),
 	)
 	return tea.NewView(s)
 }

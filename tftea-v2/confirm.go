@@ -96,11 +96,11 @@ func (m ConfirmModel) View() tea.View {
 	}
 	s := fmt.Sprintf("%s\n\n  %s    %s\n", labelStyle.Render(m.label), yes, no)
 	s += fmt.Sprintf("\n%s yes   %s no   %s navigate   %s confirm   %s cancel\n",
-		keyStyle.Render(" Y "),
-		keyStyle.Render(" N "),
-		keyStyle.Render(" ←/→/tab "),
-		keyStyle.Render(" enter "),
-		keyStyle.Render(" esc "),
+		shortcutStyle.Render(" Y "),
+		shortcutStyle.Render(" N "),
+		shortcutStyle.Render(" ←/→/tab "),
+		shortcutStyle.Render(" enter "),
+		shortcutStyle.Render(" esc "),
 	)
 	return tea.NewView(s)
 }

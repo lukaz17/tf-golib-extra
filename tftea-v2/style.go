@@ -9,6 +9,8 @@ package tftea
 import "charm.land/lipgloss/v2"
 
 var (
-	keyStyle   = lipgloss.NewStyle().Bold(true).Reverse(true)
-	labelStyle = lipgloss.NewStyle().Bold(true)
+	focusedOptionStyle = lipgloss.NewStyle().Reverse(true)
+	labelStyle         = lipgloss.NewStyle().Bold(true)
+	optionStyle        = lipgloss.NewStyle()
+	shortcutStyle      = lipgloss.NewStyle().Bold(true).Reverse(true)
 )

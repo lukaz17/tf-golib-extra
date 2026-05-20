@@ -375,18 +375,18 @@ func (m SelectModel) View() tea.View {
 
 	if m.multiple {
 		sb.WriteString(fmt.Sprintf("\n%s navigate   %s page   %s toggle   %s confirm   %s cancel  \n",
-			keyStyle.Render(" ↑/↓ "),
-			keyStyle.Render(" ←/→ "),
-			keyStyle.Render(" tab "),
-			keyStyle.Render(" enter "),
-			keyStyle.Render(" esc "),
+			shortcutStyle.Render(" ↑/↓ "),
+			shortcutStyle.Render(" ←/→ "),
+			shortcutStyle.Render(" tab "),
+			shortcutStyle.Render(" enter "),
+			shortcutStyle.Render(" esc "),
 		))
 	} else {
 		sb.WriteString(fmt.Sprintf("\n%s navigate   %s page   %s confirm   %s cancel  \n",
-			keyStyle.Render(" ↑/↓ "),
-			keyStyle.Render(" ←/→ "),
-			keyStyle.Render(" enter "),
-			keyStyle.Render(" esc "),
+			shortcutStyle.Render(" ↑/↓ "),
+			shortcutStyle.Render(" ←/→ "),
+			shortcutStyle.Render(" enter "),
+			shortcutStyle.Render(" esc "),
 		))
 	}
 
